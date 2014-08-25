@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self->tavrPhoneNumber = @"+7(929)573-94-22";
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)perimeterChanged:(id)sender {
+}
+- (IBAction)switchButtonTapped:(id)sender {
+}
 @end

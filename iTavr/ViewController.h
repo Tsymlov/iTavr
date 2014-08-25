@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    NSString *tavrPhoneNumber;
+}
+
+@property (weak, nonatomic) IBOutlet UISwitch *perimeter;
+- (IBAction)perimeterChanged:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *switchButton;
+- (IBAction)switchButtonTapped:(id)sender;
 
 @end

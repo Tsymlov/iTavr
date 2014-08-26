@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self->tavrPhoneNumber = @"+7(929)573-94-22";
+    tavrPhoneNumber = @"+7(929)573-94-22"; //TODO: Load this value from settings.
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,7 +27,20 @@
 }
 
 - (IBAction)perimeterChanged:(id)sender {
+    UISwitch *mySwitch = (UISwitch *)sender;
+    if ([mySwitch isOn]) {
+        [self sendSMS:@"91#301"];
+    }
+    else{
+        [self sendSMS:@"91#300"];
+    }
 }
+
+- (void)sendSMS:(NSString*)msg{
+    //TODO: Implement this.
+    NSLog([NSString stringWithFormat:@"Sending SMS to Tavr with text: %@", msg]);
+}
+
 - (IBAction)switchButtonTapped:(id)sender {
 }
 @end

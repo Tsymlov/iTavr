@@ -58,7 +58,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="perimeter" destination="jeH-vF-qeL" id="399-yi-GmD"/>
                         <outlet property="switchButton" destination="Ihe-xa-gqp" id="S5p-t9-7eQ"/>
                     </connections>
                 </viewController>

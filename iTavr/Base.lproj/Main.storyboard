@@ -32,14 +32,14 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-xa-gqp">
-                                <rect key="frame" x="60" y="140" width="200" height="200"/>
+                                <rect key="frame" x="53" y="132" width="215" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Включить"/>
                                 <connections>
-                                    <action selector="switchButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LsN-US-rGn"/>
+                                    <action selector="mainButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RHm-E5-AOc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Баланс:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYV-jn-33V">
@@ -58,8 +58,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="mainButton" destination="Ihe-xa-gqp" id="XGM-1T-QGn"/>
                         <outlet property="perimeterSwitch" destination="jeH-vF-qeL" id="Ci9-ti-adW"/>
-                        <outlet property="switchButton" destination="Ihe-xa-gqp" id="S5p-t9-7eQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

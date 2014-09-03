@@ -17,7 +17,7 @@
 
 - (IBAction)perimeterChanged:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *switchButton;
-- (IBAction)switchButtonTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *mainButton;
+- (IBAction)mainButtonTapped:(id)sender;
 
 @end

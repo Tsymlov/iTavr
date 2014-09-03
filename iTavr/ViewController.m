@@ -11,8 +11,12 @@
 #define kTestPhoneNumber @"+7(929)573-94-22"
 #define kTurnPerimeterOnCommand @"91#301"
 #define kTurnPerimeterOffCommand @"91#300"
+#define kTurnTavrOnCommand @"3333"
+#define kTurnTavrOffCommand @"2222"
 
-@interface ViewController ()
+@interface ViewController (){
+    bool isTavrOn;
+}
 @end
 
 @implementation ViewController
@@ -21,30 +25,52 @@
 {
     [super viewDidLoad];
     tavrPhoneNumber =  kTestPhoneNumber; //TODO: Load this value from settings.
+    isTavrOn = NO; //TODO: Request a state from Tavr.
+    [self refreshMainButton];
+}
+
+- (void)refreshMainButton
+{
+    self.mainButton.titleLabel.adjustsFontSizeToFitWidth = YES;
+    self.mainButton.titleLabel.baselineAdjustment = UIBaselineAdjustmentNone;
+    if (isTavrOn) {
+        self.mainButton.titleLabel.text = @"Выключить";
+        self.mainButton.backgroundColor = [UIColor redColor];
+    }
+    else{
+        self.mainButton.titleLabel.text = @"Включить";
+        self.mainButton.backgroundColor = [UIColor greenColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)perimeterChanged:(id)sender {
     UISwitch *perimeter = (UISwitch *)sender;
     if ([perimeter isOn]) {
-        [self sendSMS:kTurnPerimeterOnCommand];
+        [self turnPerimeterOn];
     }
     else{
-        [self sendSMS:kTurnPerimeterOffCommand];
+        [self turnPerimeterOff];
     }
+}
+
+- (void)turnPerimeterOn {
+    [self sendSMS:kTurnPerimeterOnCommand];
+}
+
+- (void)turnPerimeterOff {
+    [self sendSMS:kTurnPerimeterOffCommand];
 }
 
 - (void)sendSMS:(NSString*)msg{
     NSLog(@"Sending SMS to %@ with text: %@", tavrPhoneNumber, msg);
     
     MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
-    if([MFMessageComposeViewController canSendText])
-    {
+    if([MFMessageComposeViewController canSendText]){
         controller.body = msg;
         controller.recipients = [NSArray arrayWithObjects:tavrPhoneNumber, nil];
         controller.messageComposeDelegate = self;
@@ -52,27 +78,56 @@
     }
 }
 
-- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
-{
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
     [self dismissViewControllerAnimated:YES completion:NULL];
     
     if (result == MessageComposeResultCancelled){
         NSLog(@"Message cancelled");
-        [self invertPerimeterSwitch];
+        if ([controller.body  isEqual: kTurnPerimeterOffCommand]||[controller.body  isEqual: kTurnPerimeterOnCommand]) {
+            [self cancelationOfTurningPerimeter];
+        }
     }
     else if (result == MessageComposeResultSent){
         NSLog(@"Message sent");
+        if ([controller.body isEqual: kTurnTavrOffCommand]||[controller.body isEqual: kTurnTavrOnCommand]) {
+            [self completionOfTurningTavr];
+        }
     }
     else{
         NSLog(@"Message failed");
-        [self invertPerimeterSwitch];
+        if ([controller.body  isEqual: kTurnPerimeterOffCommand]||[controller.body  isEqual: kTurnPerimeterOnCommand]) {
+            [self cancelationOfTurningPerimeter];
+        }
     }
+}
+
+- (void)cancelationOfTurningPerimeter{
+    [self invertPerimeterSwitch];
 }
 
 - (void)invertPerimeterSwitch{
     [self.perimeterSwitch setOn: ![self.perimeterSwitch isOn] animated:YES];
 }
 
-- (IBAction)switchButtonTapped:(id)sender {
+- (void)completionOfTurningTavr{
+    isTavrOn = !isTavrOn;
+    [self refreshMainButton];
+}
+
+- (IBAction)mainButtonTapped:(id)sender {
+    if (isTavrOn) {
+        [self turnTavrOff];
+    }
+    else{
+        [self turnTavrOn];
+    }
+}
+
+- (void)turnTavrOff {
+    [self sendSMS:kTurnTavrOffCommand];
+}
+
+- (void)turnTavrOn {
+    [self sendSMS:kTurnTavrOnCommand];
 }
 @end

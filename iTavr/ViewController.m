@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#define kTestPhoneNumber @"+7(929)573-94-22"
+#define kTurnPerimeterOnCommand @"91#301"
+#define kTurnPerimeterOffCommand @"91#300"
 
+@interface ViewController ()
 @end
 
 @implementation ViewController
@@ -17,7 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    tavrPhoneNumber = @"+7(929)573-94-22"; //TODO: Load this value from settings.
+    tavrPhoneNumber =  kTestPhoneNumber; //TODO: Load this value from settings.
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,10 +32,10 @@
 - (IBAction)perimeterChanged:(id)sender {
     UISwitch *perimeter = (UISwitch *)sender;
     if ([perimeter isOn]) {
-        [self sendSMS:@"91#301"];
+        [self sendSMS:kTurnPerimeterOnCommand];
     }
     else{
-        [self sendSMS:@"91#300"];
+        [self sendSMS:kTurnPerimeterOffCommand];
     }
 }
 
@@ -45,20 +48,29 @@
         controller.body = msg;
         controller.recipients = [NSArray arrayWithObjects:tavrPhoneNumber, nil];
         controller.messageComposeDelegate = self;
-        [self presentViewController:controller animated:YES completion:nil];
+        [self presentViewController:controller animated:YES completion:NULL];
     }
 }
 
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:NULL];
     
-    if (result == MessageComposeResultCancelled)
+    if (result == MessageComposeResultCancelled){
         NSLog(@"Message cancelled");
-    else if (result == MessageComposeResultSent)
+        [self invertPerimeterSwitch];
+    }
+    else if (result == MessageComposeResultSent){
         NSLog(@"Message sent");
-    else
+    }
+    else{
         NSLog(@"Message failed");
+        [self invertPerimeterSwitch];
+    }
+}
+
+- (void)invertPerimeterSwitch{
+    [self.perimeterSwitch setOn: ![self.perimeterSwitch isOn] animated:YES];
 }
 
 - (IBAction)switchButtonTapped:(id)sender {

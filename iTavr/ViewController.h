@@ -13,6 +13,8 @@
     NSString *tavrPhoneNumber;
 }
 
+@property (weak, nonatomic) IBOutlet UISwitch *perimeterSwitch;
+
 - (IBAction)perimeterChanged:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *switchButton;

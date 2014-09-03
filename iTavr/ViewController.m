@@ -23,7 +23,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    tavrPhoneNumber =  kTestPhoneNumber; //TODO: Load this value from settings.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    tavrPhoneNumber =  [defaults objectForKey:@"tavrPhoneNumber"];
     isTavrOn = NO; //TODO: Request a state from Tavr.
     [self refreshMainButton];
     [self.perimeterSwitch setOn:NO];

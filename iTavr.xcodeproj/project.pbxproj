@@ -22,6 +22,7 @@
 		3D13451E19AB7F9E00CD5162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D13451C19AB7F9E00CD5162 /* InfoPlist.strings */; };
 		3D13452019AB7F9E00CD5162 /* iTavrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D13451F19AB7F9E00CD5162 /* iTavrTests.m */; };
 		3D13452A19B090D500CD5162 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D13452919B090D500CD5162 /* MessageUI.framework */; };
+		3DB1632C19B752DC00F1B5DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3DB1632B19B752DC00F1B5DD /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3D13451D19AB7F9E00CD5162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D13451F19AB7F9E00CD5162 /* iTavrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTavrTests.m; sourceTree = "<group>"; };
 		3D13452919B090D500CD5162 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		3DB1632B19B752DC00F1B5DD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				3D13450619AB7F9E00CD5162 /* Main.storyboard */,
 				3D13450919AB7F9E00CD5162 /* ViewController.h */,
 				3D13450A19AB7F9E00CD5162 /* ViewController.m */,
+				3DB1632B19B752DC00F1B5DD /* Settings.bundle */,
 				3D13450C19AB7F9E00CD5162 /* Images.xcassets */,
 				3D1344FB19AB7F9D00CD5162 /* Supporting Files */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB1632C19B752DC00F1B5DD /* Settings.bundle in Resources */,
 				3D13450D19AB7F9E00CD5162 /* Images.xcassets in Resources */,
 				3D1344FF19AB7F9D00CD5162 /* InfoPlist.strings in Resources */,
 				3D13450819AB7F9E00CD5162 /* Main.storyboard in Resources */,

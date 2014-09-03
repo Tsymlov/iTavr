@@ -21,16 +21,15 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     tavrPhoneNumber =  kTestPhoneNumber; //TODO: Load this value from settings.
     isTavrOn = NO; //TODO: Request a state from Tavr.
     [self refreshMainButton];
+    [self.perimeterSwitch setOn:NO];
 }
 
-- (void)refreshMainButton
-{
+- (void)refreshMainButton{
     self.mainButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.mainButton.titleLabel.baselineAdjustment = UIBaselineAdjustmentNone;
     if (isTavrOn) {
@@ -43,8 +42,7 @@
     }
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
 }
 
@@ -121,6 +119,10 @@
     else{
         [self turnTavrOn];
     }
+}
+
+- (IBAction)infoButtonTapped:(id)sender {
+    [self sendSMS:@"4444"];
 }
 
 - (void)turnTavrOff {

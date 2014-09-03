@@ -14,10 +14,10 @@
 }
 
 @property (weak, nonatomic) IBOutlet UISwitch *perimeterSwitch;
-
-- (IBAction)perimeterChanged:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *mainButton;
+@property (weak, nonatomic) IBOutlet UILabel *balance;
+- (IBAction)perimeterChanged:(id)sender;
 - (IBAction)mainButtonTapped:(id)sender;
+- (IBAction)infoButtonTapped:(id)sender;
 
 @end

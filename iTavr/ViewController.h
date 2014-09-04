@@ -12,12 +12,12 @@
 @interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate> {
     NSString *tavrPhoneNumber;
 }
-
-@property (weak, nonatomic) IBOutlet UISwitch *perimeterSwitch;
-@property (weak, nonatomic) IBOutlet UIButton *mainButton;
-@property (weak, nonatomic) IBOutlet UILabel *balance;
-- (IBAction)perimeterChanged:(id)sender;
-- (IBAction)mainButtonTapped:(id)sender;
-- (IBAction)infoButtonTapped:(id)sender;
-
+- (IBAction)turnOnButtonTapped:(id)sender;
+- (IBAction)turnOffButtonTapped:(id)sender;
+- (IBAction)fullSecurityButtonTapped:(id)sender;
+- (IBAction)perimeterButtonTapped:(id)sender;
+- (IBAction)balanceRequestButtonTapped:(id)sender;
+- (IBAction)alarmRequestButtonTapped:(id)sender;
+- (IBAction)stateRequestButtonTapped:(id)sender;
+- (IBAction)settingsRequestButtonTapped:(id)sender;
 @end

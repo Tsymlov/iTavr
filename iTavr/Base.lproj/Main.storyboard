@@ -16,50 +16,151 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Периметр:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hU-OG-EG0">
-                                <rect key="frame" x="53" y="345" width="86" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tA3-13-BHh">
+                                <rect key="frame" x="20" y="52" width="280" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jeH-vF-qeL">
-                                <rect key="frame" x="219" y="340" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <string key="title">Включить 
+  охрану</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="perimeterChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="CUR-MZ-5th"/>
-                                </connections>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-xa-gqp">
-                                <rect key="frame" x="53" y="108" width="215" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Включить"/>
-                                <connections>
-                                    <action selector="mainButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RHm-E5-AOc"/>
+                                    <action selector="turnOnButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="74a-Xi-KXa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQV-XL-nJb">
-                                <rect key="frame" x="246" y="438" width="22" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Snr-i3-D9b">
+                                <rect key="frame" x="20" y="159" width="280" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <string key="title">Выключить 
+   охрану</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="infoButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bHf-hp-mTw"/>
+                                    <action selector="turnOffButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yke-BD-mgN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XYQ-wX-xLy">
+                                <rect key="frame" x="20" y="264" width="130" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Bhc-9l-fEW"/>
+                                    <constraint firstAttribute="width" constant="130" id="aou-r7-1Qt"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title">Включить режим 
+  полной охраны</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fullSecurityButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XNv-fn-bWe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-Ha-edE">
+                                <rect key="frame" x="170" y="264" width="130" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Pbj-8N-at2"/>
+                                    <constraint firstAttribute="width" constant="130" id="mCr-jc-Utv"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title">Включить режим 
+      периметра</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="perimeterButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vB4-ek-Vw9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-Ye-V4q">
+                                <rect key="frame" x="20" y="332" width="130" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3gM-PE-9oI"/>
+                                    <constraint firstAttribute="width" constant="130" id="byB-iZ-CDM"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title">   Запрос 
+состояния</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stateRequestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="66p-v4-jNY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ew2-nU-6c3">
+                                <rect key="frame" x="170" y="332" width="130" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="9dy-WP-Se3"/>
+                                    <constraint firstAttribute="height" constant="60" id="DmV-ao-OaF"/>
+                                </constraints>
+                                <state key="normal" title="Предупреждения">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alarmRequestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HQQ-Ks-Jbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dmi-2J-sjF">
+                                <rect key="frame" x="20" y="400" width="130" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="aFH-a9-Dw0"/>
+                                    <constraint firstAttribute="height" constant="60" id="b2C-wY-yPQ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title"> Запрос
+баланса</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="balanceRequestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="m2p-aJ-FL9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-6w-HXB">
+                                <rect key="frame" x="170" y="400" width="130" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5oy-NJ-mLQ"/>
+                                    <constraint firstAttribute="width" constant="130" id="f9W-9Y-gLD"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title">Запрос текущих 
+      настроек </string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingsRequestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DvS-tk-9yy"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bQV-XL-nJb" secondAttribute="bottom" constant="20" id="ESZ-co-u3k"/>
-                            <constraint firstAttribute="trailing" secondItem="bQV-XL-nJb" secondAttribute="trailing" constant="52" id="llP-Fz-ZZM"/>
+                            <constraint firstItem="kWT-Ye-V4q" firstAttribute="top" secondItem="XYQ-wX-xLy" secondAttribute="bottom" constant="8" id="H62-gO-5Of"/>
+                            <constraint firstItem="2dt-6w-HXB" firstAttribute="top" secondItem="ew2-nU-6c3" secondAttribute="bottom" constant="8" id="Zxg-cZ-5gI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2dt-6w-HXB" secondAttribute="bottom" constant="20" id="bHW-O4-CXn"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Dmi-2J-sjF" secondAttribute="bottom" constant="20" id="cWa-vu-21i"/>
+                            <constraint firstItem="Dmi-2J-sjF" firstAttribute="top" secondItem="kWT-Ye-V4q" secondAttribute="bottom" constant="8" id="mMo-is-Odx"/>
+                            <constraint firstItem="ew2-nU-6c3" firstAttribute="top" secondItem="7hL-Ha-edE" secondAttribute="bottom" constant="8" id="oux-ZY-75v"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="mainButton" destination="Ihe-xa-gqp" id="XGM-1T-QGn"/>
-                        <outlet property="perimeterSwitch" destination="jeH-vF-qeL" id="Ci9-ti-adW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -57,6 +57,10 @@
 		3D13451F19AB7F9E00CD5162 /* iTavrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTavrTests.m; sourceTree = "<group>"; };
 		3D13452919B090D500CD5162 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		3DB1632B19B752DC00F1B5DD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		3DB1632E19BF0AEC00F1B5DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3DB1632F19BF0B7400F1B5DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		3DB1633019BF0B7400F1B5DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3DB1633119BF0B7400F1B5DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 3D1344E819AB7F9D00CD5162;
 			productRefGroup = 3D1344F219AB7F9D00CD5162 /* Products */;
@@ -286,6 +291,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D1344FE19AB7F9D00CD5162 /* en */,
+				3DB1633019BF0B7400F1B5DD /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -294,6 +300,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D13450719AB7F9E00CD5162 /* Base */,
+				3DB1632E19BF0AEC00F1B5DD /* en */,
+				3DB1632F19BF0B7400F1B5DD /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -302,6 +310,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3D13451D19AB7F9E00CD5162 /* en */,
+				3DB1633119BF0B7400F1B5DD /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

@@ -1,0 +1,24 @@
+
+/* Class = "IBUIButton"; normalTitle = "Запрос текущих \n      настроек "; ObjectID = "2dt-6w-HXB"; */
+"2dt-6w-HXB.normalTitle" = "Current settings\n       request ";
+
+/* Class = "IBUIButton"; normalTitle = "Включить режим \n      периметра"; ObjectID = "7hL-Ha-edE"; */
+"7hL-Ha-edE.normalTitle" = "  Turn on\n perimeter";
+
+/* Class = "IBUIButton"; normalTitle = " Запрос\nбаланса"; ObjectID = "Dmi-2J-sjF"; */
+"Dmi-2J-sjF.normalTitle" = "Balance\n request";
+
+/* Class = "IBUIButton"; normalTitle = "Выключить \n   охрану"; ObjectID = "Snr-i3-D9b"; */
+"Snr-i3-D9b.normalTitle" = "Turn off\nsecurity";
+
+/* Class = "IBUIButton"; normalTitle = "Включить режим \n  полной охраны"; ObjectID = "XYQ-wX-xLy"; */
+"XYQ-wX-xLy.normalTitle" = "   Turn on\nfull security";
+
+/* Class = "IBUIButton"; normalTitle = "Предупреждения"; ObjectID = "ew2-nU-6c3"; */
+"ew2-nU-6c3.normalTitle" = "Alarm";
+
+/* Class = "IBUIButton"; normalTitle = "   Запрос \nсостояния"; ObjectID = "kWT-Ye-V4q"; */
+"kWT-Ye-V4q.normalTitle" = "  State\nrequest";
+
+/* Class = "IBUIButton"; normalTitle = "Включить \n  охрану"; ObjectID = "tA3-13-BHh"; */
+"tA3-13-BHh.normalTitle" = "Turn on\nsecurity";

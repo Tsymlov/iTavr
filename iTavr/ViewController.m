@@ -17,9 +17,7 @@
 #define kStateRequestCommand @"1111"
 #define kSettingsRequestCommand @"91#"
 
-@interface ViewController (){
-    bool isTavrOn;
-}
+@interface ViewController ()
 @end
 
 @implementation ViewController

@@ -24,8 +24,8 @@
                                     <constraint firstAttribute="height" constant="80" id="Y1h-CC-GOc"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Включить 
-  охрану</string>
+                                    <string key="title">Turn on
+security</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -40,8 +40,8 @@
                                     <constraint firstAttribute="height" constant="80" id="3kn-n3-GRs"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Выключить 
-   охрану</string>
+                                    <string key="title">Turn off
+security</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -57,8 +57,8 @@
                                     <constraint firstAttribute="width" constant="130" id="aou-r7-1Qt"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Включить режим 
-  полной охраны</string>
+                                    <string key="title">   Turn on
+full security</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -74,8 +74,8 @@
                                     <constraint firstAttribute="width" constant="130" id="mCr-jc-Utv"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Включить режим 
-      периметра</string>
+                                    <string key="title">  Turn on
+ perimeter</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -91,8 +91,8 @@
                                     <constraint firstAttribute="width" constant="130" id="byB-iZ-CDM"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">   Запрос 
-состояния</string>
+                                    <string key="title">  State
+request</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -107,7 +107,7 @@
                                     <constraint firstAttribute="width" constant="130" id="9dy-WP-Se3"/>
                                     <constraint firstAttribute="height" constant="60" id="DmV-ao-OaF"/>
                                 </constraints>
-                                <state key="normal" title="Предупреждения">
+                                <state key="normal" title="Alarm">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -123,8 +123,8 @@
                                     <constraint firstAttribute="height" constant="60" id="b2C-wY-yPQ"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title"> Запрос
-баланса</string>
+                                    <string key="title">Balance
+ request</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -140,8 +140,8 @@
                                     <constraint firstAttribute="width" constant="130" id="f9W-9Y-gLD"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Запрос текущих 
-      настроек </string>
+                                    <string key="title">Current settings
+       request </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

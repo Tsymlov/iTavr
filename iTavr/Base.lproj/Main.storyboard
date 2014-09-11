@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,10 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tA3-13-BHh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tA3-13-BHh">
                                 <rect key="frame" x="20" y="52" width="280" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Y1h-CC-GOc"/>
+                                </constraints>
                                 <state key="normal">
                                     <string key="title">Включить 
   охрану</string>
@@ -30,10 +33,12 @@
                                     <action selector="turnOnButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="74a-Xi-KXa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Snr-i3-D9b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Snr-i3-D9b">
                                 <rect key="frame" x="20" y="159" width="280" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="3kn-n3-GRs"/>
+                                </constraints>
                                 <state key="normal">
                                     <string key="title">Выключить 
    охрану</string>
@@ -44,9 +49,8 @@
                                     <action selector="turnOffButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yke-BD-mgN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XYQ-wX-xLy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XYQ-wX-xLy">
                                 <rect key="frame" x="20" y="264" width="130" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Bhc-9l-fEW"/>
@@ -62,9 +66,8 @@
                                     <action selector="fullSecurityButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XNv-fn-bWe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-Ha-edE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-Ha-edE">
                                 <rect key="frame" x="170" y="264" width="130" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Pbj-8N-at2"/>
@@ -80,9 +83,8 @@
                                     <action selector="perimeterButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vB4-ek-Vw9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-Ye-V4q">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-Ye-V4q">
                                 <rect key="frame" x="20" y="332" width="130" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3gM-PE-9oI"/>
@@ -98,9 +100,8 @@
                                     <action selector="stateRequestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="66p-v4-jNY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ew2-nU-6c3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ew2-nU-6c3">
                                 <rect key="frame" x="170" y="332" width="130" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="9dy-WP-Se3"/>
@@ -114,9 +115,8 @@
                                     <action selector="alarmRequestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HQQ-Ks-Jbl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dmi-2J-sjF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dmi-2J-sjF">
                                 <rect key="frame" x="20" y="400" width="130" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="aFH-a9-Dw0"/>
@@ -132,9 +132,8 @@
                                     <action selector="balanceRequestButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="m2p-aJ-FL9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-6w-HXB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-6w-HXB">
                                 <rect key="frame" x="170" y="400" width="130" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="5oy-NJ-mLQ"/>
@@ -153,12 +152,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Dmi-2J-sjF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="0S1-1E-QU0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ew2-nU-6c3" secondAttribute="trailing" constant="4" id="3M2-HW-FAI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2dt-6w-HXB" secondAttribute="trailing" constant="4" id="A5n-Ek-HlI"/>
+                            <constraint firstItem="Snr-i3-D9b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="Dii-y1-Nvg"/>
                             <constraint firstItem="kWT-Ye-V4q" firstAttribute="top" secondItem="XYQ-wX-xLy" secondAttribute="bottom" constant="8" id="H62-gO-5Of"/>
+                            <constraint firstItem="tA3-13-BHh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="MHs-pM-j3m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tA3-13-BHh" secondAttribute="trailing" constant="4" id="XnD-q4-aHe"/>
                             <constraint firstItem="2dt-6w-HXB" firstAttribute="top" secondItem="ew2-nU-6c3" secondAttribute="bottom" constant="8" id="Zxg-cZ-5gI"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2dt-6w-HXB" secondAttribute="bottom" constant="20" id="bHW-O4-CXn"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Dmi-2J-sjF" secondAttribute="bottom" constant="20" id="cWa-vu-21i"/>
+                            <constraint firstItem="kWT-Ye-V4q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="e6L-HW-cZ5"/>
+                            <constraint firstItem="Snr-i3-D9b" firstAttribute="top" secondItem="tA3-13-BHh" secondAttribute="bottom" constant="27" id="hr2-nY-v2w"/>
+                            <constraint firstItem="XYQ-wX-xLy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="i2j-QP-O3t"/>
                             <constraint firstItem="Dmi-2J-sjF" firstAttribute="top" secondItem="kWT-Ye-V4q" secondAttribute="bottom" constant="8" id="mMo-is-Odx"/>
                             <constraint firstItem="ew2-nU-6c3" firstAttribute="top" secondItem="7hL-Ha-edE" secondAttribute="bottom" constant="8" id="oux-ZY-75v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Snr-i3-D9b" secondAttribute="trailing" constant="4" id="qI7-Aa-dcj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7hL-Ha-edE" secondAttribute="trailing" constant="4" id="yM9-WW-cZ3"/>
+                            <constraint firstItem="tA3-13-BHh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="zWO-Uy-VC7"/>
                         </constraints>
                     </view>
                 </viewController>

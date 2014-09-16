@@ -24,8 +24,8 @@
                                     <constraint firstAttribute="height" constant="80" id="Y1h-CC-GOc"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Turn on
-security</string>
+                                    <string key="title">Turn On
+Security</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -40,8 +40,8 @@ security</string>
                                     <constraint firstAttribute="height" constant="80" id="3kn-n3-GRs"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Turn off
-security</string>
+                                    <string key="title">Turn Off
+Security</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -57,8 +57,8 @@ security</string>
                                     <constraint firstAttribute="width" constant="130" id="aou-r7-1Qt"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">   Turn on
-full security</string>
+                                    <string key="title">   Turn On
+Full Security</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -74,8 +74,8 @@ full security</string>
                                     <constraint firstAttribute="width" constant="130" id="mCr-jc-Utv"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">  Turn on
- perimeter</string>
+                                    <string key="title">  Turn On
+ Perimeter</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -92,7 +92,7 @@ full security</string>
                                 </constraints>
                                 <state key="normal">
                                     <string key="title">  State
-request</string>
+Request</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -124,7 +124,7 @@ request</string>
                                 </constraints>
                                 <state key="normal">
                                     <string key="title">Balance
- request</string>
+Request</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -140,8 +140,8 @@ request</string>
                                     <constraint firstAttribute="width" constant="130" id="f9W-9Y-gLD"/>
                                 </constraints>
                                 <state key="normal">
-                                    <string key="title">Current settings
-       request </string>
+                                    <string key="title">Current Settings
+       Request </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

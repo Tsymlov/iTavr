@@ -10,6 +10,8 @@
 
 @implementation AppDelegate
 
+NSString* gTavrPhoneNumber;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -36,6 +38,12 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    gTavrPhoneNumber = [self getTavrPhoneNumber];
+}
+
+- (NSString*) getTavrPhoneNumber {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults objectForKey:@"tavrPhoneNumber"];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MFMessageComposeViewController.h>
 
-@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate> {
-    NSString *tavrPhoneNumber;
-}
+@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate>
+
 - (IBAction)turnOnButtonTapped:(id)sender;
 - (IBAction)turnOffButtonTapped:(id)sender;
 - (IBAction)fullSecurityButtonTapped:(id)sender;

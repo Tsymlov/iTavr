@@ -17,15 +17,10 @@
 #define kStateRequestCommand @"1111"
 #define kSettingsRequestCommand @"91#"
 
-@interface ViewController ()
-@end
-
 @implementation ViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    tavrPhoneNumber =  [defaults objectForKey:@"tavrPhoneNumber"];
 }
 
 - (void)didReceiveMemoryWarning{
@@ -97,12 +92,13 @@
 }
 
 - (void)sendSMS:(NSString*)msg{
-    NSLog(@"Sending SMS to %@ with text: %@", tavrPhoneNumber, msg);
+    extern NSString* gTavrPhoneNumber;
+    NSLog(@"Sending SMS to %@ with text: %@", gTavrPhoneNumber, msg);
     
     MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
     if([MFMessageComposeViewController canSendText]){
         controller.body = msg;
-        controller.recipients = [NSArray arrayWithObjects:tavrPhoneNumber, nil];
+        controller.recipients = [NSArray arrayWithObjects:gTavrPhoneNumber, nil];
         controller.messageComposeDelegate = self;
         [self presentViewController:controller animated:YES completion:NULL];
     }
